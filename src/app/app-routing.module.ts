@@ -3,11 +3,21 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { InsideDoorsComponent } from './offers/inside-doors/inside-doors.component';
+import { OutsideDoorsComponent } from './offers/outside-doors/outside-doors.component';
+import { PlanksComponent } from './offers/planks/planks.component';
+import { TablesComponent } from './offers/tables/tables.component';
+
 
 const routes: Routes = [
+  {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},
+  {path: 'inside-doors', component: InsideDoorsComponent},
+  {path: 'outside-doors', component: OutsideDoorsComponent},
+  {path: 'planks', component: PlanksComponent},
+  {path: 'tables', component: TablesComponent},
 
 ];
 

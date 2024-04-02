@@ -1,3 +1,19 @@
-<router-outlet></router-outlet>
-<app-home></app-home>
+<div class="header flex justify-content-around flex-wrap h-6rem" [class.sticky]="isSticky">
+  <div class="left">
+    <button routerLink="/home" class="logo-button bg-cover bg-center">
+    </button>
+  </div>
+  <div class="right card flex justify-content-center">
+    <p-menu #menu [model]="items" [popup]="true"></p-menu>
+    <button pButton type="button" class="button text-2xl" (click)="menu.toggle($event)" icon="pi pi-bars" label="Oferta"></button>
+    <button pButton routerLink="/about" class="menu-button font-bold font-light text-2xl">O nas</button>
+    <button pButton routerLink="/contact" class="menu-button font-bold font-light text-2xl">Kontakt</button>
+  </div>
+</div>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
+
+
 
