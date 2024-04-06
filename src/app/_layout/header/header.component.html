@@ -1,1 +1,11 @@
-<p>header works!</p>
+<div class="header">
+    <div class="fixed top-0 left-0 w-full z-5 px-2 pt-2 xl:px-2 xl:pt-2 lg:px-2 lg:pt-2 md:px-2 md:pt-2">
+      <div class="card">
+        <p-menubar [model]="items">
+            <ng-template pTemplate="start">
+                <img src="assets/logo.png" height="50" class="mx-2 xl:mx-8" />
+            </ng-template>
+        </p-menubar>
+      </div>
+    </div>
+</div>

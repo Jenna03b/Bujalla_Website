@@ -18,6 +18,7 @@ import { TablesComponent } from './offers/tables/tables.component';
 import { PlanksComponent } from './offers/planks/planks.component';
 import { HeaderComponent } from './_layout/header/header.component';
 import { FooterComponent } from './_layout/footer/footer.component';
+import { MenubarModule } from 'primeng/menubar';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import { FooterComponent } from './_layout/footer/footer.component';
     ImageModule,
     ToastModule,
     ButtonModule,
-    MenuModule
+    MenubarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
