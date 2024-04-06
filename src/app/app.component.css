@@ -1,6 +1,6 @@
 .header {
     position: relative;
-    background-color: #ffffffdc;
+    background-color: #ffffffe5;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.356);
     color: rgb(0, 0, 0);
     transition: .25;
@@ -31,7 +31,6 @@
     border: none;
     height: 80px;
     width: 80px;
-    background-image: url('C:/Repositories/Bujalla/src/assets/logo.png');
     background-color: transparent;
   }
   

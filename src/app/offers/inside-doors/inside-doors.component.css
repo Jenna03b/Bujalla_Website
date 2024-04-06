@@ -1,0 +1,23 @@
+.gallery-section {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery {
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card p-image {
+    margin: 10px;
+}
+
+
+.footer {
+    background-color: #e9e6e1;
+}

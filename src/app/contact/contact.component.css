@@ -1,10 +1,8 @@
-.top-section {
-    background-image: url('C:/Repositories/Bujalla/src/assets/2150712867.jpg');
- 
- }
- 
-.maps{
-    background-image: url('C:/Repositories/Bujalla/src/assets/tlo.png');
+
+@media (max-width: 768px) {
+    .mapa {
+        width: 350px;
+    }
 }
 
  .footer {

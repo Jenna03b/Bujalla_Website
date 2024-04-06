@@ -16,6 +16,8 @@ import { OutsideDoorsComponent } from './offers/outside-doors/outside-doors.comp
 import { InsideDoorsComponent } from './offers/inside-doors/inside-doors.component';
 import { TablesComponent } from './offers/tables/tables.component';
 import { PlanksComponent } from './offers/planks/planks.component';
+import { HeaderComponent } from './_layout/header/header.component';
+import { FooterComponent } from './_layout/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { PlanksComponent } from './offers/planks/planks.component';
     InsideDoorsComponent,
     TablesComponent,
     PlanksComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

@@ -11,7 +11,6 @@ import { TablesComponent } from './offers/tables/tables.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'home', component: HomeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'inside-doors', component: InsideDoorsComponent},

@@ -1,0 +1,22 @@
+
+
+
+.item {
+    flex: 1;
+    height: 400px;
+    transition: flex 0.8s ease;
+}
+
+.item:hover {
+    flex: 4;
+}
+
+@media (max-width: 768px) {
+    .item {
+        flex: 100%;
+    }
+}
+
+.footer {
+    background-color: #e9e6e1;
+}
