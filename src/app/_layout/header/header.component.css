@@ -1,0 +1,15 @@
+.p-menubar {
+    justify-content: center;
+    align-items: center;
+}
+
+.p-menuitem {
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+}
+
+.p-menubar-end {
+    width: 10px;
+    margin: 0;
+}

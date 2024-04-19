@@ -1,4 +1,35 @@
+.first-section {
+    background-image: url('/assets/tlo.png');
+    height: 770px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
 
+@media only screen and (max-width: 768px) {
+    .first-section {
+    height: 600px;
+    background-position: left;
+
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .first-section {
+    height: 700px;
+
+    }
+}
+
+/* For laptops and larger screens, use the original image */
+@media only screen and (min-width: 1025px) and (max-width: 1500px) {
+    .first-section {
+    height: 700px;
+
+    }
+}
 
 
 .item {
@@ -14,9 +45,9 @@
 @media (max-width: 768px) {
     .item {
         flex: 100%;
+        width: 25rem;
     }
-}
-
-.footer {
-    background-color: #e9e6e1;
+    .item:hover {
+        flex: 2;
+    }
 }

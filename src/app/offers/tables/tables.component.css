@@ -1,4 +1,32 @@
+.first-section {
+    background-image: url('/assets/15357.jpg');
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
 
-.footer {
-    background-color: #e9e6e1;
+@media only screen and (max-width: 768px) {
+    .first-section {
+    height: 600px;
+    background-position: left;
+
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .first-section {
+    height: 750px;
+
+    }
+}
+
+/* For laptops and larger screens, use the original image */
+@media only screen and (min-width: 1025px) and (max-width: 1500px) {
+    .first-section {
+    height: 700px;
+
+    }
 }

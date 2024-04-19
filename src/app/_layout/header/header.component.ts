@@ -16,8 +16,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     this.items = [
       { label: 'Strona główna', routerLink: '/' },
-      { label: 'Drzwi wejściowe', routerLink: '/outside-doors' },
-      { label: 'Drzwi pokojowe', routerLink: '/inside-doors' },
+      { label: 'Drzwi zewnętrzne', routerLink: '/outside-doors' },
+      { label: 'Drzwi wewnętrzne', routerLink: '/inside-doors' },
       { label: 'Stoły', routerLink: '/tables' },
       { label: 'Tarcica', routerLink: '/planks' },
       { label: 'Kontakt', routerLink: '/contact' }

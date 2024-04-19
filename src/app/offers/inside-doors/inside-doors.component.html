@@ -1,10 +1,10 @@
 <div>
     <div class="top-section">
-        <div class="bg-center align-content-center w-full h-screen bg-auto" style ="background-image: url('assets/tlo_pokojowe2.jpg');">
-            <div class="flex justify-content-center flex-wrap">
-                <div class="flex align-items-end justify-content-center mx-5 my-3 xl:mx-8 xl:my-5">
-                    <div class=" w-20rem xl:w-25rem h-10rem xl:h-10rem">
-                        <img src="assets/Bujalla_w.png" alt="Bujalla" class="absolute w-20rem xl:w-25rem">
+        <div class="first-section">
+            <div class="flex justify-content-center align-content-center flex-wrap">
+                <div class="flex align-items-center justify-content-center mx-5 my-3 xl:mx-8 xl:my-5">
+                    <div class=" w-20rem xl:w-30rem h-7rem xl:h-7rem">
+                        <img src="assets/p2.png" alt="Bujalla" class="absolute w-20rem xl:w-30rem">
                     </div>
                 </div>
             </div>
@@ -14,8 +14,7 @@
         <div class="section-introduction">
             <div class="relative h-auto py-3 ">
                 <div class="flex justify-content-center bg-white-alpha-90 w-full">
-                <div class="font-light w-8 text-orange-800">
-                    <p class="text-5xl"> Drzwi wewnętrzne</p>
+                <div class="font-light w-8">
                     <p class="text-2xl line-height-3"> 
                         Drzwi wewnętrzne wykonujemy z wysokiej klasy różnego rodzaju drewna i naturalnych obłogów. 
                         Wykonane są z ościeżnicą i opaskami regulowanymi, co pozwala idealnie dopasować je do ściany.         
@@ -25,7 +24,32 @@
             </div>
         </div>
     </div>
-    <div class="gallery-section">
-                
+    <div class="gallery">
+        <div class="align-content-center w-full h-auto xl:px-8 xl:py-3">
+            <div class="xl:px-8 bg-white-alpha-90">
+                <div class="mx-4 my-3 xl:mx-8 xl:my-5">
+                    <div *ngIf="images" class="grid flex flex-wrap justify-content-center gap-3">
+                        <div *ngFor="let image of images; let index = index" class="col-3 border-round flex align-items-center justify-content-center w-15rem h-25rem" key="index">
+                            <img [src]="image.thumbnailImageSrc" [alt]="image.alt" style="cursor: pointer" (click)="imageClick(index)" />
+                        </div>
+                    </div>
+                </div>
+                <p-galleria
+                    [value]="images"
+                    [(visible)]="displayCustom"
+                    [(activeIndex)]="activeIndex"
+                    [numVisible]="7"
+                    [circular]="true"
+                    [fullScreen]="true"
+                    [showItemNavigators]="true"
+                    [showThumbnails]="false"
+                >
+                    <ng-template pTemplate="item" let-item>
+                        <img [src]="item.itemImageSrc" style="width: 50%; display: block;" />
+                        <h2 style="margin-bottom: 3rem; color: #ffffff;">{{ item.title }}</h2>
+                    </ng-template>
+                </p-galleria>
+            </div>
+        </div>
     </div>
 </div>
