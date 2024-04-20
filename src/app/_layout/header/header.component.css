@@ -1,15 +1,5 @@
-.p-menubar {
-    justify-content: center;
-    align-items: center;
-}
-
-.p-menuitem {
-    justify-content: center;
-    align-items: center;
-    width: 800px;
-}
-
-.p-menubar-end {
-    width: 10px;
-    margin: 0;
+.card {
+    background-color: rgba(252, 255, 255, 0.959);
+    padding: .5rem;
+    border-radius: 10px;
 }
