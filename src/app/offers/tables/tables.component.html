@@ -28,7 +28,7 @@
             <div class="xl:px-8 bg-white-alpha-90">
                 <div class="mx-4 my-3 xl:mx-8 xl:my-5">
                     <div *ngIf="images" class="grid flex flex-wrap justify-content-center gap-3">
-                        <div *ngFor="let image of images; let index = index" class="col-3 border-round flex align-items-center justify-content-center w-15rem h-25rem" key="index">
+                        <div *ngFor="let image of images; let index = index" class="col-3 border-round flex align-items-center justify-content-center w-20rem h-25rem" key="index">
                             <img [src]="image.thumbnailImageSrc" [alt]="image.alt" style="cursor: pointer" (click)="imageClick(index)" />
                         </div>
                     </div>
@@ -44,7 +44,7 @@
                     [showThumbnails]="false"
                 >
                     <ng-template pTemplate="item" let-item>
-                        <img [src]="item.itemImageSrc" style="width: 20%; display: block;" />
+                        <img [src]="item.itemImageSrc" style="width: auto; display: block;" />
                         <h2 style="margin-bottom: 3rem; color: #ffffff;">{{ item.title }}</h2>
                     </ng-template>
                 </p-galleria>

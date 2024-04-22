@@ -32,7 +32,7 @@ export class PhotoService {
           title: 'Drzwi zewnętrzne nr.4'
         },
         {
-          itemImageSrc: 'assets/img/outside/w5.png',
+          itemImageSrc: 'assets/img/outside/w5-1.png',
           thumbnailImageSrc: 'assets/thumbnail/outside/w5.png',
           alt: 'Drzwi zewnętrzne',
           title: 'Drzwi zewnętrzne nr.5'
@@ -80,7 +80,7 @@ export class PhotoService {
           title: 'Drzwi zewnętrzne nr.12'
         },
         {
-          itemImageSrc: 'assets/img/outside/w13.png',
+          itemImageSrc: 'assets/img/outside/w13-1.png',
           thumbnailImageSrc: 'assets/thumbnail/outside/w13.png',
           alt: 'Drzwi zewnętrzne',
           title: 'Drzwi zewnętrzne nr.13'
@@ -122,7 +122,7 @@ export class PhotoService {
           title: 'Drzwi zewnętrzne nr.19'
         },
         {
-          itemImageSrc: 'assets/img/outside/w20.png',
+          itemImageSrc: 'assets/img/outside/w20-1.png',
           thumbnailImageSrc: 'assets/thumbnail/outside/w20.png',
           alt: 'Drzwi zewnętrzne',
           title: 'Drzwi zewnętrzne nr.20'
@@ -374,7 +374,7 @@ getDataI() {
         title: 'Drzwi wewnętrzne nr.6'
       },
       {
-        itemImageSrc: 'assets/img/inside/p7.png',
+        itemImageSrc: 'assets/img/inside/p7-1.png',
         thumbnailImageSrc: 'assets/thumbnail/inside/p7.png',
         alt: 'Drzwi wewnętrzne',
         title: 'Drzwi wewnętrzne nr.7'
@@ -422,7 +422,7 @@ getDataI() {
         title: 'Drzwi wewnętrzne nr.14'
       },
       {
-        itemImageSrc: 'assets/img/oinside/p15.png',
+        itemImageSrc: 'assets/img/inside/p15.png',
         thumbnailImageSrc: 'assets/thumbnail/inside/p15.png',
         alt: 'Drzwi wewnętrzne',
         title: 'Drzwi wewnętrzne nr.15'
@@ -464,7 +464,7 @@ getDataI() {
         title: 'Drzwi wewnętrzne nr.21'
       },
       {
-        itemImageSrc: 'assets/img/inside/p22.png',
+        itemImageSrc: 'assets/img/inside/p22-1.png',
         thumbnailImageSrc: 'assets/thumbnail/inside/p22.png',
         alt: 'Drzwi wewnętrzne',
         title: 'Drzwi wewnętrzne nr.22'
@@ -500,7 +500,7 @@ getDataI() {
         title: 'Drzwi wewnętrzne nr.27'
       },
       {
-        itemImageSrc: 'assets/img/inside/p28.png',
+        itemImageSrc: 'assets/img/inside/p28-1.png',
         thumbnailImageSrc: 'assets/thumbnail/inside/p28.png',
         alt: 'Drzwi wewnętrzne',
         title: 'Drzwi wewnętrzne nr.28'
@@ -542,22 +542,16 @@ getDataI() {
         title: 'Drzwi wewnętrzne nr.34'
       },
       {
-        itemImageSrc: 'assets/img/inside/p35.png',
+        itemImageSrc: 'assets/img/inside/p35-1.png',
         thumbnailImageSrc: 'assets/thumbnail/inside/p35.png',
         alt: 'Drzwi wewnętrzne',
         title: 'Drzwi wewnętrzne nr.35'
       },
       {
-        itemImageSrc: 'assets/img/inside/p36.png',
+        itemImageSrc: 'assets/img/inside/p36-1.png',
         thumbnailImageSrc: 'assets/thumbnail/inside/p36.png',
         alt: 'Drzwi wewnętrzne',
         title: 'Drzwi wewnętrzne nr.36'
-      },
-      {
-        itemImageSrc: 'assets/img/inside/p37.png',
-        thumbnailImageSrc: 'assets/thumbnail/inside/p37.png',
-        alt: 'Drzwi wewnętrzne',
-        title: 'Drzwi wewnętrzne nr.37'
       }
       
   ];
@@ -566,22 +560,22 @@ getDataI() {
 getDataT() {
   return [
       {
-          itemImageSrc: 'assets/img/tables/s1.png',
-          thumbnailImageSrc: 'assets/thumbnail/tables/s1.png',
-          alt: 'Stoły',
-          title: 'Stół nr.1'
+        itemImageSrc: 'assets/img/tables/s1.png',
+        thumbnailImageSrc: 'assets/thumbnail/tables/s1.png',
+        alt: 'Stoły',
+        title: 'Stół nr.1'
       },
       {
-          itemImageSrc: 'assets/img/tables/s2.png',
-          thumbnailImageSrc: 'assets/thumbnail/tables/s2.png',
-          alt: 'Stoły',
-          title: 'Stół nr.2'
+        itemImageSrc: 'assets/img/tables/s2.png',
+        thumbnailImageSrc: 'assets/thumbnail/tables/s2.png',
+        alt: 'Stoły',
+        title: 'Stół nr.2'
       },
       {
-          itemImageSrc: 'assets/img/tables/s3.png',
-          thumbnailImageSrc: 'assets/thumbnail/tables/s3.png',
-          alt: 'Stoły',
-          title: 'Stół nr.3'
+        itemImageSrc: 'assets/img/tables/s3.png',
+        thumbnailImageSrc: 'assets/thumbnail/tables/s3-c.png',
+        alt: 'Stoły',
+        title: 'Stół nr.3'
       },
       {
         itemImageSrc: 'assets/img/tables/s4.png',
