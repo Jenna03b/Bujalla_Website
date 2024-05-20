@@ -1,3 +1,11 @@
 .footer {
-    background-color: #D7CCC8;
+    background-color: #dfd6d3;
+    color: #000000;
+    font-size: large;
+    font-weight: 600;
+}
+
+.end{
+    background-color: #706969;
+    height: 3px;
 }
