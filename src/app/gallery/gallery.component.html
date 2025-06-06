@@ -1,0 +1,59 @@
+<div class="fadein animation-duration-1000 px-4 lg:px-8 lg:mx-8">
+  <div class="pr-4 lg:pr-8 lg:mr-8">
+    <h1 class="text-5xl xl:text-6xl title-color pt-5 sm:pt-8">Galeria</h1>
+    <p class="text-lg sm:text-xl my-6 description-color">
+      Prezentujemy nasze najnowsze realizacje, w tym drzwi, stoły i tarcice,
+      które zachwycają jakością i estetyką. Każdy projekt odzwierciedla nasze
+      zaangażowanie i dbałość o detale, a także indywidualne podejście do
+      klienta, które jest naszą wizytówką. Zapraszamy do odkrywania!
+    </p>
+  </div>
+  <div>
+    <div>
+      <p-tabView styleClass="text-black">
+        <p-tabPanel *ngFor="let tab of tabPanels" [header]="tab.header">
+          <div class="align-content-center">
+            <div class="xl:px-8 bg-white-alpha-90">
+              <div
+                *ngIf="tab.images"
+                class="grid flex flex-wrap justify-content-center gap-3"
+              >
+                <div
+                  *ngFor="let image of tab.images; let i = index"
+                  class="col-3 border-round flex align-items-center justify-content-center w-15rem h-25rem mx-3"
+                  [attr.key]="i"
+                >
+                  <img
+                    [src]="image.thumbnailImageSrc"
+                    [alt]="image.alt"
+                    style="cursor: pointer"
+                    (click)="imageClick(i)"
+                  />
+                </div>
+              </div>
+              <p-galleria
+                [value]="tab.images"
+                [(visible)]="displayCustom"
+                [(activeIndex)]="activeIndex"
+                [numVisible]="7"
+                [circular]="true"
+                [fullScreen]="true"
+                [showItemNavigators]="true"
+                [showThumbnails]="false"
+              >
+                <ng-template pTemplate="item" let-item>
+                  <div class="block text-center">
+                    <img [src]="item.itemImageSrc" class="w-20rem" />
+                    <h2 style="margin-bottom: 3rem; color: #ffffff">
+                      {{ item.title }}
+                    </h2>
+                  </div>
+                </ng-template>
+              </p-galleria>
+            </div>
+          </div>
+        </p-tabPanel>
+      </p-tabView>
+    </div>
+  </div>
+</div>

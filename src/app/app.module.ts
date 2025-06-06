@@ -19,6 +19,10 @@ import { FooterComponent } from './_layout/footer/footer.component';
 import { MenubarModule } from 'primeng/menubar';
 import { GalleriaModule } from 'primeng/galleria';
 import { PhotoService } from './service/photo.service';
+import { OfferComponent } from './offer/offer.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { TabViewModule } from 'primeng/tabview';
+import { TabMenuModule } from 'primeng/tabmenu';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,9 @@ import { PhotoService } from './service/photo.service';
     TablesComponent,
     PlanksComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    OfferComponent,
+    GalleryComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,9 +47,11 @@ import { PhotoService } from './service/photo.service';
     ToastModule,
     ButtonModule,
     MenubarModule,
-    GalleriaModule
+    GalleriaModule,
+    TabViewModule,
+    TabMenuModule,
   ],
-  providers: [ PhotoService ],
-  bootstrap: [AppComponent]
+  providers: [PhotoService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

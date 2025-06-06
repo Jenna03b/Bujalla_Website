@@ -1,10 +1,20 @@
-<div class="header">
-    <div class="fixed top-0 left-0 w-screen z-5 px-4 pt-2 xl:px-6 xl:pt-2">
-      <div class="card flex align-items-center  justify-content-between flex-wrap">
-        <p-menubar [model]="items" class="xl:flex-order-1"></p-menubar>
-        <button routerLink="/" class="button border-none">
-        <img src="assets/bujalla.png"  alt="Bujalla" height="55" class="xl:flex-order-0 mx-2 xl:mx-6" />
-        </button>
-      </div>
+<div class="mt-8">
+  <div class="fixed top-0 left-0 w-screen z-5 bg-white py-1 shadow-5">
+    <div
+      class="card flex flex-row align-items-center justify-content-between flex-wrap"
+    >
+      <button routerLink="/" class="button border-none cursor-pointer bg-white">
+        <img
+          src="assets/bujalla.png"
+          alt="Bujalla"
+          height="55"
+          class="xl:flex-order-0 mx-2 xl:mx-6"
+        />
+      </button>
+      <p-menubar
+        [model]="items"
+        styleClass="border-none bg-white mr-5"
+      ></p-menubar>
     </div>
+  </div>
 </div>

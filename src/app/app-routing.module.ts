@@ -6,20 +6,21 @@ import { InsideDoorsComponent } from './offers/inside-doors/inside-doors.compone
 import { OutsideDoorsComponent } from './offers/outside-doors/outside-doors.component';
 import { PlanksComponent } from './offers/planks/planks.component';
 import { TablesComponent } from './offers/tables/tables.component';
-
+import { GalleryComponent } from './gallery/gallery.component';
+import { OfferComponent } from './offer/offer.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'contact', component: ContactComponent},
-  {path: 'inside-doors', component: InsideDoorsComponent},
-  {path: 'outside-doors', component: OutsideDoorsComponent},
-  {path: 'planks', component: PlanksComponent},
-  {path: 'tables', component: TablesComponent},
-
+  { path: '', component: HomeComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'offer', component: OfferComponent },
+  { path: 'gallery', component: GalleryComponent },
+  // {path: 'outside-doors', component: OutsideDoorsComponent},
+  // {path: 'planks', component: PlanksComponent},
+  // {path: 'tables', component: TablesComponent},
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
